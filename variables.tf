@@ -21,3 +21,9 @@ variable "s3_to_cloudfront" {
   type        = string
   default     = "s3-cloudfront-dette"
 }
+
+variable "container_port" {
+  description = "container port"
+  type        = number
+  default     = 8080
+}
