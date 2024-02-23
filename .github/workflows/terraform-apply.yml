@@ -19,5 +19,8 @@ jobs:
         aws-region: us-east-1
     - name: run-terraformapply
       run: |
+        terraform fmt
         terraform init
+        terraform validate
+        terraform plan
         terraform apply -auto-approve
